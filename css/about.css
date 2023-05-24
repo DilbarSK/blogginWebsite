@@ -1,0 +1,151 @@
+ 
+header{
+    background:url("../assest/images/about_backgound.jpg") , linear-gradient(to right , rgba(0,0,0,0.8) , rgba(0,0,0,0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.header-content{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly !important;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+} 
+.content li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.content li span{
+    margin-left: 10px;
+}
+    
+.header-content img{
+    width: 300px;
+}
+.active{
+    color: crimson;
+}
+/* ======================= start main ================================ */
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* start gallery */
+
+.gallery .images{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 170px);
+    grid-auto-rows: 170px;
+    grid-auto-columns: repeat(4 , 1fr);
+    grid-gap: 20px;
+    max-height: 100vh;
+    overflow: auto;
+}
+.images .image{
+    position: relative;
+    overflow: hidden;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.images .image:hover .content{
+    top: 0;
+}
+.image .content{
+    width: 100%;
+    height: 100%;
+    position: absolute ;
+    left: 0;
+    top: 100%;
+    background-color: black;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.image .content .image-title{
+    color: white;
+}
+.image .content .about-image{
+    color: rgb(119, 119, 119);
+    font-size: 1.3vw;
+}
+.image .content button{
+    padding: 2px 5px;
+    font-size: 11px;
+    margin-top: 5px;
+    position: absolute ;
+    bottom: 10px;
+}
+
+/* ========================== about ============================================ */
+
+.about{
+    margin-top: 30px;
+}
+.about p{
+    margin-top: 16px;
+}
+
+
+
+/* ============================ utility classe / common property================== */
+section{
+    padding: 20px;
+}
+.section-heading{
+    text-align: center;
+    text-decoration: underline;
+  font-family: "Shantell Sans", cursive;
+    font-size: 4rem;
+    color: crimson;
+}
+.about-section{
+    width: 70%;
+    text-align:center ;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

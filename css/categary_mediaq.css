@@ -1,0 +1,69 @@
+/* ===============================start media query ===================
+
+
+
+ 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    /* .blog-content {
+        font-size: 2vw;
+    } */
+    nav .fa-solid{
+        display: block;
+        color: black;
+        z-index: 3;
+        position: absolute ;
+        right: 20px;
+        top: 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .search-bar {
+        margin-right: 5%;
+    }
+     
+    .logo{
+        font-size: 3vw;
+    }
+    
+.records{
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows:max-content;
+    grid-auto-rows: max-content;
+}
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+     .buttons button{
+        display: inline-block;
+        width: max-content;
+        margin: 1vw;
+        padding: 1;
+        border-radius: 20px;
+        font-size: 3vw;
+    }    
+    .filter-section {
+        display: block;
+        height: max-content;
+    }
+.records{
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows:max-content;
+    grid-auto-rows: max-content;
+}   
+     
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    .records{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows:max-content;
+        grid-auto-rows: max-content;
+    }   
+        
+} 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--start styling-->
+    <!-- <link rel="stylesheet" href="../assest/bootstrap-5.2.2-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="assest/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mediaq.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/contact_mediaq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!--end styling-->
+
+    <script src="script/javascript.js" defer></script>
+    <script src="script/contact.js" defer></script>
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- ============================start header =================================== -->
+    <header>
+        <nav>
+            <div class="logo">Bl<span>oo</span>ger</div>
+            <i class="fa-solid fa-bars" id="close-open"></i>
+            <ul class="nav-links d-flex gap-2">
+                <li> <button><a href="index.html"  >Home</a></button> </li>
+                <li> <button><a href="about.html">About Me</a></button> </li>
+                <li> <button><a href="contact.html"  class="active">Contact Me</a></button> </li>
+                <li> <button><a href="categary.html">Categary</a></button> </li>
+              </ul>
+            <ul class="social-links header-social-links d-flex gap-2">
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-content">
+
+            <form class="form" >
+                <div class="form-group">
+                    <label>Name :</label>
+                    <input type="text" id="name" maxlength="8" autofocus>
+                </div>
+                <div class="form-group">
+                    <label>Email :</label>
+                    <input type="text" id="email" >
+                </div>
+                <div class="form-group">
+                    <label>Subject :</label>
+                    <input type="text" id="subject" maxlength="8">
+                </div>
+                <div class="form-group messege">
+                    <textarea name="" id="textarea" maxlength="30" cols="30" rows="10" placeholder="Messege...(under 30 character)"></textarea>
+                    <div>
+                        <div id="total-character">total character : 30 </div>
+                        <div id="remaining-character">remaining : 30</div>
+                    </div>
+                </div>
+                <button class="btn">send <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+             
+        </div>
+    </header>
+    <!-- ============================main=================================== -->
+    <main>
+        <table class="table" border="1" cellspacing="0">
+            <caption class="table-heading">Recent Messeges</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Messeg</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="records">
+            </tbody>
+        </table>
+    </main>
+    <!-- ============================= start footer========================= -->
+
+    <footer id="footer">
+        <div class="footer-row">
+            <div class="about">
+                <h2 class="footer-sub-heading">About Us</h2>
+                <p>
+                    Adipisicing elit. Eius repellendus ipsum , nostrum impedit aut laborum maiores consequuntur ipsa
+                    quaerat quas!
+                    Velit, sed veniam.
+                </p>
+                <button class="btn"><a href="about.html">go to page</a> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="messege">
+                <h2 class="footer-sub-heading">Messege</h2>
+
+                <div class="form-group">
+                    <input type="text"> <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2 class="footer-sub-heading">Instagram</h2>
+
+                <div class="images">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h2 class="footer-sub-heading">Follow Us</h2>
+                <p>Let us be Social</p>
+                <ul class="footer-social-links social-links d-flex gap-2">
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="copyright">Copyright 2023 All right reserved | <span>made by dilbar sk</span> </div>
+    </footer>
+
+
+    <!-- =============================footer ends========================= -->
+</body>
+
+</html>

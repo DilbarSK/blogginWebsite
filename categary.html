@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--start styling-->
+    <!-- <link rel="stylesheet" href="../assest/bootstrap-5.2.2-dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="assest/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mediaq.css" />
+    <link rel="stylesheet" href="css/categary.css" />
+    <link rel="stylesheet" href="css/categary_mediaq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!--end styling-->
+
+    <script src="script/javascript.js" defer></script>
+    <script src="script/categary.js" defer></script>
+
+    <title>Catigary</title>
+</head>
+
+<body>
+    <!-- ============================start header =================================== -->
+    <header>
+        <nav>
+            <div class="logo">Bl<span>oo</span>ger</div>
+            <ul class="nav-links d-flex gap-2">
+                <li><button><a href="index.html">Home</a></button></li>
+                <li><button><a href="about.html">About Me</a></button></li>
+                <li><button><a href="contact.html">Contact Me</a></button></li>
+                <li><button><a href="categary.html"  class="active" >Categary</a></button></li>
+              </ul>
+            <div class="search-bar"  id="search-bar">
+                <input type="text" id="search" placeholder="search..."> 
+                <i class="fa-brands fa-searchengin" id="search-btn" onclick="filter_data('filter_data')"></i>
+            </div>
+            <i class="fa-solid fa-bars" id="close-open"></i>
+        </nav>
+    </header>
+    <!-- ============================main=================================== -->
+    <main>
+        <section class="filter-section">
+            <div class="buttons">
+                <button class="button all" onclick="filter_data('all')">All <span id="all-data"></span> </button>
+                <button class="button shoping" onclick="filter_data('shoping')">shoping <span id="shoping-data"></span> </button>
+                <button class="button feed" onclick="filter_data('feed')">Feed <span id="feed-data"></span> </button>
+                <button class="button cooking" onclick="filter_data('cooking')">cooking <span id="cooking-data"></span> </button>
+                <button class="button travelling" onclick="filter_data('travelling')"> travelling <span id="travlling-data"></span> </button>
+                <button class="button shoot" onclick="filter_data('shoot')">shoot   <span id="shoot-data"></span> </button>
+                <button class="button life-style" onclick="filter_data('life-style')">Life Style <span id="liftStyle-data"></span> </button>
+                <button class="button racing" onclick="filter_data('racing')">racing <span id="racing-data"></span> </button>
+                <button class="button gaming" onclick="filter_data('gaming')">gaming <span id="gaming-data"></span> </button>
+                <button class="button riding" onclick="filter_data('riding')">riding <span id="riding-data"></span> </button>
+            </div>
+            <div class="records">
+
+
+               <!-- <div class="blog blog1" data-item="shoping">
+                    <div class="blog-image">
+                        <img src="assest/images/recent-1.jpg" alt="place image" />
+                        <div class="blog-content">
+                            <h5 class="blog-title">blog title</h5>
+                            <p class="blog-date">22/3/2019</p>
+                        </div>
+                        
+                        <div class="blog-condition">
+                            <div class="blog-left-side">
+                                <i class="fa-solid fa-thumbs-up"></i> 55
+                                <i class="fa-solid fa-share"></i> 13
+                            </div>
+                            <div><i class="fa-solid fa-comment"></i> 32</div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+    </main>
+    <!-- ============================= start footer========================= -->
+
+    <footer id="footer">
+        <div class="footer-row">
+            <div class="about">
+                <h2 class="footer-sub-heading">About Us</h2>
+                <p>
+                    Adipisicing elit. Eius repellendus ipsum , nostrum impedit aut laborum maiores consequuntur ipsa
+                    quaerat quas!
+                    Velit, sed veniam.
+                </p>
+                <button class="btn"><a href="about.html">go to page</a> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="messege">
+                <h2 class="footer-sub-heading">Messege</h2>
+
+                <div class="form-group">
+                    <input type="text"> <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2 class="footer-sub-heading">Instagram</h2>
+
+                <div class="images">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+                    <img src="assest/images/recent-2.jpg" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <h2 class="footer-sub-heading">Follow Us</h2>
+                <p>Let us be Social</p>
+                <ul class="footer-social-links social-links d-flex gap-2">
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="copyright">Copyright 2023 All right reserved | <span>made by dilbar sk</span> </div>
+    </footer>
+
+
+    <!-- =============================footer ends========================= -->
+</body>
+
+</html>

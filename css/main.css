@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+ 
+
+:root {
+  --primary-color: crimson;
+  --primary-light-color : rgb(218, 70, 100) ;
+  --linear-gradient:linear-gradient(to right , var(--primary-color) , var(--primary-light-color)) ;
+  --smooth-white: rgb(214, 214, 214);
+  --primary-bg-color: white;
+  --border-light: white;
+  --border-dark: black;
+  --gray-100: gray;
+  --gray-50: rgb(63, 73, 84);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ========================== utility classes / common property ============================= */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button,
+a,
+i {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.active{
+  background: var(--linear-gradient);
+  color: white !important;
+  border-radius: 20px;
+  padding: 5px 15px;
+} 
+
+
+.d-flex {
+  display: flex;
+}
+
+.gap-2 {
+  gap: 2vw;
+}
+
+.btn {
+  padding: 5px 15px;
+  display: inline-block;
+  color: white;
+  background:var(--linear-gradient);
+  border: none;
+  box-shadow: 0 0 5px  var(--gray-100);
+  /* border: 1px solid ; */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+button{
+  border: none;
+
+}
+
+.btn:hover {
+  transform: scale(1.1); 
+  color: white !important;
+  border-radius: 20px;
+}
+.nav-links li:hover {
+  color: white !important;
+  border-radius: 20px;
+}
+.m-10{
+  margin-left: 10px;
+}
+li{
+  list-style: none;
+}
+/* =========================== start header ============================ */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assest/images/header-backgroun-1.jpg"),
+    url("../assest/images/header-background-2.jpg"),
+    url("../assest/images/header-background-3.jpg"),
+    url("../assest/images/header-background-4.jpg");
+  background-size: 26% 100%;
+  background-position: 0% 0%, 33% 0%, 66% 0%, 100% 0%, 0 0;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 10;
+  background-color: white;
+}
+
+.logo {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+nav  .fa-solid{
+  display: none;
+  font-size: 1.4rem;
+  z-index: 3;
+  color: black;
+}
+.nav-links li {
+  position: relative;
+  font-size: 18px;
+}
+
+.nav-links li a {
+  color: var(--gray-50);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-links li:hover a {
+  color: var(--primary-color);
+}
+
+.nav-links li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: crimson;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.social-links li {
+  width: 22px;
+
+  padding: 2px;
+}
+
+.social-links li:hover a {
+  font-size: 1.2rem;
+}
+
+.header-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.main-heading {
+  font-size: 5vw;
+  width: 70vw;
+  color: rgb(214, 214, 214);
+  font-weight: 700;
+  font-family: "Shantell Sans", cursive;
+  line-height: 3rem;
+}
+
+.main-heading span {
+  font-size: 3rem;
+}
+
+.blogs-btn {
+  margin-top: 20px;
+  background-color: white;
+  color: white;
+  letter-spacing: 5px;
+}  
+
+/* =============================popular blogs =========================== */
+
+/* ======================================== start footer ================================*/
+
+footer{
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+footer .footer-sub-heading{
+  margin: 10px 0;
+}
+footer .about p{
+  color: rgb(99, 99, 99);
+  font-size: 14px;
+}
+footer .about button{
+  margin-top:20px;
+}
+footer .about a{
+  color: white;
+}
+footer .footer-row{
+  display:flex ;
+  flex-flow: wrap;
+}
+footer .footer-row > div{
+  flex-basis: 25%;
+  padding: 10px;
+}
+footer img{
+  width:100% ;
+}
+footer .messege .form-group{
+  border: 1px solid white;
+  padding: 0 ;
+  width: max-content;
+  height: 35px;
+  background: var(--linear-gradient);
+}
+footer .messege .form-group input{
+  padding: 5px;
+  height: 100%;
+  font-size: 18px;
+  width: 200px;
+}
+footer .messege .form-group input:focus{
+  outline:none;
+  border: none;
+}
+footer .messege .form-group i{
+  padding: 5px 10px;
+  display: inline-block;
+  height: 100%;
+
+}
+footer .instagram .images{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(3 , 1fr);
+  grid-gap: 10px;
+}
+footer .footer-links p{
+  color: rgb(100, 100, 100);
+}
+footer .footer-links a{
+  color: white;
+}
+  footer .copyright{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: rgb(100, 100, 100);
+  }
+  footer .copyright span{
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

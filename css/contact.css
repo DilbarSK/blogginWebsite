@@ -1,0 +1,120 @@
+:root{
+    
+  --primary-color: crimson;
+  --primary-light-color : rgb(218, 70, 100) ;
+  --linear-gradient:linear-gradient(to right , var(--primary-color) , var(--primary-light-color)) ;
+
+}
+
+header{
+    background:url("../assest/images/contact_background.jpg") no-repeat ;
+    background-size: cover;
+    height: 110vh;
+}
+.header-content{
+    background-color: transparent;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  left: 0%;
+  top: 0%;
+  transform: translate(0%);
+}
+form{
+    text-align: left;
+
+}
+.form-group{
+    background-color: transparent;
+    width: 100%;
+    margin-top: 30px ;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px lightgray;
+    align-items: center;
+    padding: 0 10px;
+
+}
+.form-group label{
+    color: black;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.form-group input{
+    width: 80%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 10px 0;
+    border:none;
+}
+.form-group textarea,
+.form-group input:focus{
+    outline: none;
+}
+.form-group textarea{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    height: 40vh;
+    background-color: transparent;
+    font-size: 1.4rem;
+}
+.form-group textarea::placeholder{
+    letter-spacing: 2px;
+}
+form button{
+    margin:  20px 0;
+}
+form .messege{
+    position: relative;
+}
+form .messege > div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    width: 100%;
+    /* background-color: black; */
+    background: rgba(0,0,0,0.1);
+}
+form .messege div div{
+    z-index: 3;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+main{
+    width: 100%;
+    overflow-x: scroll;
+}
+.table{
+    min-width: 790px;
+    margin: 30px 10px;
+    border: none;
+    width: 100%;
+    padding: 0px;
+} 
+.table-heading{
+        text-align: center;
+        text-decoration: underline;
+      font-family: "Shantell Sans", cursive;
+        font-size: 4rem;
+        color: crimson;
+}
+.table thead{
+    background: var(--linear-gradient);
+}
+.table tbody tr td,
+    .table  tr th{
+    padding: 10px 5px;
+}
+
+
+
+
+
+
+

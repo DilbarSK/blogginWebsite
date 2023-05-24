@@ -1,0 +1,243 @@
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+  }  
+  .popular-blogs-section{
+    width: 100%;
+    padding:50px 0;
+    background-image: url("../assest/images/home2_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+    
+  .popular-section-heading{
+    font-size: 2rem;
+    color: gray;
+    font-weight: 400;
+  }
+  
+  .swipe{
+    border: 1px solid black;
+    width: 840px;
+    height: 328px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .angles{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    position: relative;
+  }
+  .right-arrow ,
+  .left-arrow {
+    position: absolute;
+   bottom: 0%;
+    transform: translateY(-50%);
+    font-size: 2rem ;
+    z-index: 2;
+  }
+  .left-arrow{
+    left: 45%;
+  }
+  .right-arrow{
+    right: 45%;
+  }
+  .popular-blogs{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    flex-grow: 1;
+    width: max-content;
+    /* transform: translate(0); */
+    transform: tran;
+  }  
+  .p-blog{
+    width: 260px;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5px var(--gray-100);
+  }  
+  .p-blog-image{
+    position:relative ;
+    
+  }
+  .p-blog img{
+    width: 100% ;
+  }  
+  .p-play-btn{
+    position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    display: none;
+    font-size: 3rem;
+    color: white;
+  }
+  .p-blog:hover .p-play-btn {
+    display: block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .p-play-btn:hover{
+    color: crimson  ;
+  }
+  .p-blog-content{
+    font-size: 11px;
+  }
+  .p-blog-title{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .p-blog-date{
+    margin-top: 10px;
+    color: gray;
+  }
+  
+  .p-blog-btn{
+    margin-top: 10px;
+  }
+  /* ====================================== section=================================== */
+  .popular-blogs-section{
+    padding: 20px;
+}
+
+.popular-blogs-section .section-heading{
+    text-align: center;
+    text-decoration: underline;
+  font-family: "Shantell Sans", cursive;
+    font-size: 4rem;
+    color: crimson;
+}
+.popular-blogs-section > p{
+  text-align: center;
+}
+  
+  /* ================================start divisions ========================== */
+  
+  .select-range{
+    width: max-content;
+    margin: 10px;
+  }
+  .select-range input{
+    padding: 5px;
+    font-weight: 600;
+  }
+  datalist{
+    border: none;
+  }
+  select:active , 
+  select:focus {
+    border: none ;
+  }
+
+  .divisions{
+    width: 100%;
+    display: flex;
+  }
+  .blog-section{
+  flex-basis: 70%;
+  padding: 10px;
+  overflow: auto;
+  }
+  .information-aside{
+    flex-basis: 30%;
+    background-color: white;
+  }
+  .blog{
+    margin-top: 50px;
+    width: 100%;
+  }
+  .blog-media{
+  border-bottom: 1px solid black;
+  }
+  .blog-media video{
+    width: 100%;
+  }
+  .blog-condition{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+  .blog-left-side i{
+    margin-right: 10px;
+    font-size:1.3rem;
+  }
+  .blog-title{
+    font-family: sans-serif;
+    margin: 10px;
+  }
+  .blog-text{
+    font-size: 14px;
+  }
+  
+  .blog-btn{
+    margin: 20px 0;
+  }
+  
+  /* ================================= start information-aside ======================= */
+  
+  .categary button{
+    margin-left: 5vw;
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+  }
+  .information-aside section:not(:first-child){
+    margin-top:10vh;
+  }
+  .last-year .p-blog img{
+    height: 150px;
+  }
+    .last-year .p-blog{
+    width: 80%;
+    box-shadow: none;
+    margin-top: 5vh;
+    border-bottom: 1px solid var(--primary-color);
+  }
+  .last-year .p-blog-heading{
+    font-size: 2vw;
+    font-weight: 700;
+  }
+  
+  /* =============================== start pagination ====================== */
+  
+  .pagination{
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .pagination-buttons .pagination-btn{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+  }
+  .pagination-buttons .fa-solid{
+    font-size: 1.5rem;
+  background-color: white;  
+  }
+  .mt-10{
+    margin-top: 20px;
+  }

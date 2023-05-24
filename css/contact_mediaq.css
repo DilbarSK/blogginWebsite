@@ -1,0 +1,45 @@
+/* ===============================start media query =================== */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .form-group{
+        margin-top: 10px;
+    }
+    .header-content{
+        margin-top: 20px;
+        width: 90vw;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    form .messege div div{
+        font-size: 14px;
+    } 
+    .form-group input{
+        width: 60%;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    #textarea  {
+        font-size: 14px;
+
+    }
+    .form-group label{
+        font-size: 14px;
+    }
+    .form-group textarea{
+        height: 300px;
+    }
+    nav{
+        display: block;
+    }
+    .search-bar{
+        display: block;
+        margin-top: 30px;
+    }
+}
+ 

@@ -1,0 +1,71 @@
+/* ===============================start media query =================== */
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    .blog-section {
+        flex-basis: 60%;
+    }
+
+    .information-aside {
+        flex-basis: 40%;
+    }
+
+     
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 875px) {
+    .swipe {
+        width: 560px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+
+    .popular-blogs-section {
+        width: 100vw;
+        padding: 20px 10px;
+    }
+
+    .blog-section {
+        flex-basis: 60%;
+    }
+
+    .information-aside {
+        flex-basis: 40%;
+    }
+    .popular-blogs-section .section-heading{
+        font-size: 8vw;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    
+
+    .swipe {
+        width: 280px;
+    }
+    
+    .blog-section{
+        flex-basis: 100%;
+    }
+    .information-aside{
+        display: none;
+    }
+    .popular-blogs-section > p{
+        font-size: 14px;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    
+}
